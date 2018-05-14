@@ -1,7 +1,7 @@
 
 var Sinch = function(){};
 
-Sinch.prototype.start = function(success, failure, appKey, appSecret, host, userId){
+Sinch.prototype.startClient = function(success, failure, appKey, appSecret, host, userId){
     cordova.exec(success, failure, "Sinch", "start", [appKey, appSecret, host, userId]);
 };
 
