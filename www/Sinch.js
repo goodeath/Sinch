@@ -1,11 +1,11 @@
 
 var Sinch = function(){};
 
-CallNumber.prototype.start = function(success, failure, appKey, appSecret, host, userId){
+Sinch.prototype.start = function(success, failure, appKey, appSecret, host, userId){
     cordova.exec(success, failure, "Sinch", "start", [appKey, appSecret, host, userId]);
 };
 
-CallNumber.prototype.callUser = function(success, failure,userId){
+Sinch.prototype.callUser = function(success, failure,userId){
     cordova.exec(success, failure, "Sinch", "callUser",[userId]);
 }
 
